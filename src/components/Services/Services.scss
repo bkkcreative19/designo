@@ -1,0 +1,42 @@
+.services {
+  display: flex;
+  gap: 4rem;
+  margin-top: 15rem;
+
+  &__item {
+    text-align: center;
+
+    &-img-container {
+      height: 20rem;
+      position: relative;
+
+      &::after {
+        content: "";
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        background-color: #9797972c;
+        position: absolute;
+        top: 0;
+        left: 25%;
+        z-index: -1;
+      }
+    }
+
+    & h2 {
+      font-size: 2rem;
+      font-family: "Jost", sans-serif;
+      font-weight: 500;
+      color: #333136;
+      text-transform: uppercase;
+      letter-spacing: 0.4rem;
+      margin: 2.5rem;
+    }
+    & p {
+      font-size: 1.6rem;
+      font-family: "Jost", sans-serif;
+      font-weight: 400;
+      color: #333136;
+    }
+  }
+}

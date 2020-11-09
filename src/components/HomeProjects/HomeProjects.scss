@@ -21,6 +21,7 @@
     justify-content: center;
     color: #fff;
     font-family: "Jost", sans-serif;
+
     border-radius: 1rem;
     text-transform: uppercase;
 
@@ -32,10 +33,12 @@
       margin-top: 1.2rem;
       font-size: 1.5rem;
       letter-spacing: 0.25em;
+      font-weight: 500;
     }
     & h1 {
       font-size: 4rem;
       letter-spacing: 0.08em;
+      font-weight: 500;
     }
   }
 }

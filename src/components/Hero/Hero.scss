@@ -1,43 +1,71 @@
 .hero {
-    background: url(../../assets/home/desktop/bg-pattern-hero-home.svg) #E7816B no-repeat  right;
-    border-radius: 1rem;
-    height: 80vh;
-    z-index: 1000;
+  background: url(../../assets/home/desktop/bg-pattern-hero-home.svg) #e7816b
+    no-repeat right;
+  border-radius: 1rem;
+  height: 80vh;
+
+  @media (max-width: 1000px) {
+    height: 100vh;
+  }
+
+  &__content {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
     position: relative;
-
-
-    &__content {
-        
-        height: 100%;
-        color: #fff;
-       
-
-        & h1 {
-            font-size: 4.8rem;
-            font-family: 'Jost', sans-serif;
-            width: 50%;
-        }
-        & p {
-            font-size: 1.6rem;
-            font-family: 'Jost', sans-serif;
-            width: 50%;
-        }
+    overflow: hidden;
+    @media (max-width: 1000px) {
+      justify-content: center;
+      align-items: flex-start;
     }
 
-    &__phone-bg {
-        background: url(../../assets/home/desktop/image-hero-phone.png) no-repeat;
-        height: 64rem;
-        // bottom: -10rem;
-        // top: 0;
-        left:  75rem;
-        position: absolute;
+    &-text {
+      width: 40%;
+      margin-left: 9rem;
+
+      @media (max-width: 1000px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 8.5rem;
+        width: 60%;
+        text-align: center;
+      }
+
+      & h1 {
+        font-size: 4.8rem;
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+        line-height: 1.1;
+      }
+
+      & p {
+        font-size: 1.6rem;
+        font-family: "Jost", sans-serif;
+        margin: 3rem 0;
+      }
+
+      & button {
+      }
     }
+  }
+
+  &__phone-bg {
+    background: url(../../assets/home/desktop/image-hero-phone.png) no-repeat;
+    height: 64rem;
+    position: relative;
+  }
 }
 
 .phone {
-    height: 64rem;
+  position: absolute;
+  top: -6rem;
+  right: -8rem;
+
+  @media (max-width: 1000px) {
     position: relative;
-    // bottom: -13rem;
-    right: 0;
-    z-index: 1;
+    margin: 0 auto;
+    // top: 15rem;
+  }
 }

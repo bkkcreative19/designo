@@ -1,46 +1,44 @@
 .nav {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+
+  &__logo img {
+    height: 2.4rem;
+  }
+
+  &__list {
     display: flex;
-    align-items: center;
-    padding: 2.5rem 0;
-    &__logo {
-        
-    }
-    &__logo img{
-        height: 2.4rem;
+    list-style: none;
+    margin-left: auto;
+
+    @media (max-width: 768px) {
+      display: none;
     }
 
-    &__list {
-        display: flex;
-        list-style: none;
-        margin-left: auto;
+    &-link {
+      text-decoration: none;
 
-        @media (max-width: 768px) {
-            display: none;
-          }
-
-        &-link {
-            text-decoration: none;
-
-            &:not(:last-child) {
-                margin-right: 2.2rem;
-            }
-        }
-
-        &-item {
-            font-size: 1.4rem;
-            font-family: 'Jost', sans-serif;
-            color: #333136;
-            text-transform: uppercase;
-            letter-spacing: .2rem;     
-        }
+      &:not(:last-child) {
+        margin-right: 2.2rem;
+      }
     }
+
+    &-item {
+      font-size: 1.4rem;
+      font-family: "Jost", sans-serif;
+      color: #333136;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+    }
+  }
 }
 
 .hamburger {
-    display: none;
+  display: none;
 
-    @media (max-width: 768px) {
-        display: inline;
-        margin-left: auto;
-      }
+  @media (max-width: 768px) {
+    display: inline;
+    margin-left: auto;
+  }
 }

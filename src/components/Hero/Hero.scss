@@ -1,0 +1,43 @@
+.hero {
+    background: url(../../assets/home/desktop/bg-pattern-hero-home.svg) #E7816B no-repeat  right;
+    border-radius: 1rem;
+    height: 80vh;
+    z-index: 1000;
+    position: relative;
+
+
+    &__content {
+        
+        height: 100%;
+        color: #fff;
+       
+
+        & h1 {
+            font-size: 4.8rem;
+            font-family: 'Jost', sans-serif;
+            width: 50%;
+        }
+        & p {
+            font-size: 1.6rem;
+            font-family: 'Jost', sans-serif;
+            width: 50%;
+        }
+    }
+
+    &__phone-bg {
+        background: url(../../assets/home/desktop/image-hero-phone.png) no-repeat;
+        height: 64rem;
+        // bottom: -10rem;
+        // top: 0;
+        left:  75rem;
+        position: absolute;
+    }
+}
+
+.phone {
+    height: 64rem;
+    position: relative;
+    // bottom: -13rem;
+    right: 0;
+    z-index: 1;
+}

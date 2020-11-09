@@ -1,0 +1,35 @@
+.get-in-touch {
+  background: url(../../assets/web-design/desktop/bg-pattern-intro-web.svg)
+    right #e7816b;
+  //   height: 20rem;
+  border-radius: 1rem;
+  padding: 8rem 0;
+  margin-top: 14rem;
+
+  &__content {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    &-text {
+      width: 45%;
+      margin-right: auto;
+      & h2 {
+        font-size: 4rem;
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+      }
+
+      & p {
+        font-size: 1.6rem;
+        font-family: "Jost", sans-serif;
+        font-weight: 400;
+      }
+    }
+    & button {
+      display: inline-block;
+      height: 5.6rem;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.home-projects {
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  grid-template-areas:
+    "hi hi hi2 hi2"
+    "hi hi hi3 hi3";
+  margin-top: 12rem;
+
+  @media (max-width: 1000px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-family: "Jost", sans-serif;
+    border-radius: 1rem;
+    text-transform: uppercase;
+
+    @media (max-width: 1000px) {
+      height: 20rem;
+    }
+
+    & p {
+      margin-top: 1.2rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.25em;
+    }
+    & h1 {
+      font-size: 4rem;
+      letter-spacing: 0.08em;
+    }
+  }
+}
+
+.web-design {
+  grid-area: hi;
+
+  background: linear-gradient(rgba(20, 20, 20, 0.726), rgba(20, 20, 20, 0.5)),
+    url(../../assets/home/desktop/image-web-design-large.jpg) no-repeat center;
+  background-size: cover;
+}
+.app-design {
+  grid-area: hi2;
+  background: linear-gradient(rgba(0, 0, 0, 0.486), rgba(0, 0, 0, 0.151)),
+    url(../../assets/home/desktop/image-app-design.jpg) no-repeat center;
+  background-size: cover;
+}
+.graphic-design {
+  grid-area: hi3;
+  background: linear-gradient(rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0.438)),
+    url(../../assets/home/desktop/image-graphic-design.jpg) no-repeat center;
+  background-size: cover;
+}

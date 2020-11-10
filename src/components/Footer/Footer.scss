@@ -1,0 +1,75 @@
+.footer {
+  background-color: #1d1c1e;
+  display: flex;
+  justify-content: center;
+  padding: 8rem 0;
+
+  &__content {
+    margin-top: 5rem;
+    &-nav {
+      display: flex;
+      align-items: center;
+      padding-bottom: 4rem;
+      &-logo img {
+        height: 2.4rem;
+      }
+
+      &-list {
+        display: flex;
+        list-style: none;
+        margin-left: auto;
+
+        &-link {
+          text-decoration: none;
+
+          &:not(:last-child) {
+            margin-right: 3.8rem;
+          }
+        }
+
+        &-item {
+          font-size: 1.4rem;
+          font-family: "Jost", sans-serif;
+          color: #fff;
+          text-transform: uppercase;
+          letter-spacing: 0.2rem;
+        }
+      }
+    }
+
+    &-contact-info {
+      border-top: 1px solid #9797972a;
+      display: flex;
+
+      color: rgba(255, 255, 255, 0.342);
+      font-family: "Jost", sans-serif;
+      padding-top: 4rem;
+      &-address {
+        font-size: 1.6rem;
+
+        & p:not(:first-child) {
+          margin-top: 0.3rem;
+        }
+      }
+
+      &-phone {
+        // font-weight: 600;
+        font-size: 1.6rem;
+        margin-left: 25%;
+
+        & p:not(:first-child) {
+          margin-top: 0.3rem;
+        }
+      }
+
+      &-logo-list {
+        margin-left: auto;
+        align-self: flex-end;
+
+        & img:not(:last-child) {
+          margin-right: 1.4rem;
+        }
+      }
+    }
+  }
+}
